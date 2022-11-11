@@ -1,32 +1,19 @@
-perguntas = ["Quem descobriu o Brasil?","Qual é a capital do Ceará?","Quanto é 3x71?"]
-respostas_corretas = ["Pedro Alvares Cabral","Fortaleza","203"]
+# inicialização do programa
+perguntas = ["Quem descobriu o Brasil?","Qual é a capital do Ceará?","Quanto é 3x71?", "Qual é o propósito do significado?"]
+respostas_corretas = ["Pedro Alvares Cabral","Fortaleza","203","Não sei"]
+# aqui termina a inicialização
 
-print (perguntas[0])
-resposta = input()
-print ("sua resposta foi "+resposta)
-if (resposta == respostas_corretas[0]):
-  print (" ")
-  print ("Resposta correta!")
-else:
-  print (" ")
-  print ("Resposta errada")
-
-print (perguntas[1])
-resposta = input()
-print ("sua resposta foi "+resposta)
-if (resposta == respostas_corretas[1]):
-  print (" ")
-  print ("Resposta correta!")
-else:
-  print (" ")
-  print ("Resposta errada")
-
-print (perguntas[2])
-resposta = input()
-print ("sua resposta foi "+resposta)
-if (resposta == respostas_corretas[2]):
-  print (" ")
-  print ("Resposta correta!")
-else:
-  print (" ")
-  print ("Resposta errada")
+#começa o jogo para valer a partir daqui 
+# vamos usar um laço de repetição na lista de perguntas
+for i in range(4):
+  print (perguntas[i])
+  resposta = input()
+  print ("sua resposta foi "+resposta)
+  if (resposta == respostas_corretas[i] ):
+    print (" ")
+    print ("Resposta correta!")
+    print (" ")
+  else:
+    print (" ")
+    print ("Resposta errada")
+    print (" ")
